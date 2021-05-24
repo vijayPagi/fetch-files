@@ -4,6 +4,14 @@ Retrieves the images used across the repository list supplied
 Use Case:
 The project takes a text source URL as a argument and then provides all the images utilized in the docker files in each repository in the input source, in the Json format.
 
+Implementation Details:
+- Used python langauge to implement the solution.
+- Utilized Github API to retrieve the Dockerfiles with FROM keyword rather direct cloning.
+- Used RegEx to validate the Input URL and commit.
+- Validation of URL with commit ID.
+- Displays Standard Output in Json format.
+- Implemented the solution as Kubernetes Job using Minikube, DockerImage(DockerHub).
+
 The Project can be executed using minikube in the below steps.
 Pre-Requisites:
 1. Minikube
