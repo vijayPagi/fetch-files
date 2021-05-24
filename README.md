@@ -13,7 +13,7 @@ Pre-Requisites:
 Steps to Execute:
 1. Clone this repository: [Clone](https://github.com/vijayPagi/fetch-files.git)
 2. Navigate to the project directory.
-3. Edit the Job.yaml file with the correct source text file argument in the environment variable value, and save.
+3. Edit the Job.yaml file with the correct source text file argument in the environment variable value for the name: ```REPOSITORY_LIST_URL```, and save.
     ```spec.template.spec.env.value```
 4. Use below command to create a kubernetes job
       ``` kubectl create -f job.yaml```
