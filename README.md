@@ -5,7 +5,7 @@ Use Case:
 The project takes a text source URL as a argument and then provides all the images utilized in the docker files in each repository in the input source, in the Json format.
 
 Implementation Details:
-- Used python langauge to implement the solution.
+- Used python language to implement the solution.
 - Utilized Github API to retrieve the Dockerfiles with FROM keyword rather direct cloning.
 - Used RegEx to validate the Input URL and commit.
 - Validation of URL with commit ID.
