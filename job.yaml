@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: fetcher
+spec:
+  template:
+    spec:
+      containers:
+      - name: fetcher
+        image: vijaypagidoju/fetcherimage:latest
+        command: ["python",  "FetchData.py"]
+        args:
+          - "https://gist.githubusercontent.com/jmelis/c60e61a893248244dc4fa12b946585c4/raw/25d39f67f2405330a6314cad64fac423a171162c/sources.tx"
+      restartPolicy: Never
