@@ -15,8 +15,8 @@ Steps to Execute
 2. Navigate to the project directory.
 3. Edit the Job.yaml file with the correct source text file argument
 4. Use below command to create a kubernetes job
-       kubectl create -f job.yaml
+      ``` kubectl create -f job.yaml```
 5. To check the status of the Job, use the below command
-       kubectl get po
+       ```kubectl get po```
 6. To get the output of the job, use the below command
-       kubectl logs "use the job name create and found in the out of Step 5 above"
+       ```kubectl logs "use the job name create and found in the out of Step 5 above"```
