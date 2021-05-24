@@ -1,10 +1,10 @@
 # fetch-files
 Retrieves the images used across the repository list supplied
 
-Use Case:
+<ins>Use Case:</ins>
 The project takes a text source URL as a argument and then provides all the images utilized in the docker files in each repository in the input source, in the Json format.
 
-Implementation Details:
+<ins>Implementation Details:</ins>
 - Used python language to implement the solution.
 - Utilized Github API to retrieve the Dockerfiles with FROM keyword rather direct cloning.
 - Used RegEx to validate the Input URL and commit.
@@ -13,12 +13,13 @@ Implementation Details:
 - Implemented the solution as Kubernetes Job using Minikube, DockerImage(DockerHub).
 
 The Project can be executed using minikube in the below steps.
-Pre-Requisites:
+
+<ins>Pre-Requisites:</ins>
 1. Minikube
 2. hypervisor kit
 3. kubernetes
 
-Steps to Execute:
+<ins>Steps to Execute:</ins>
 1. Clone this repository: [Clone](https://github.com/vijayPagi/fetch-files.git)
 2. Navigate to the project directory.
 3. Edit the Job.yaml file with the correct source text file argument in the environment variable value for the name: ```REPOSITORY_LIST_URL```, and save.
